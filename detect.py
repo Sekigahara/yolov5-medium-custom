@@ -30,9 +30,9 @@ from utils.torch_utils import select_device, load_classifier, time_sync
 @torch.no_grad()
 def run(weights='best_yolov5m_20_epoch_12bs.pt',  # model.pt path(s)
         source='data/images',  # file/dir/URL/glob, 0 for webcam
-        imgsz=640,  # inference size (pixels)
-        conf_thres=0.01,  # confidence threshold
-        iou_thres=0.3,  # NMS IOU threshold
+        imgsz=312,  # inference size (pixels)
+        conf_thres=0.1,  # confidence threshold
+        iou_thres=0.45,  # NMS IOU threshold
         max_det=1000,  # maximum detections per image
         device='',  # cuda device, i.e. 0 or 0,1,2,3 or cpu
         view_img=False,  # show results
